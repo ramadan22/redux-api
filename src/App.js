@@ -1,26 +1,40 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// import React, { useEffect } from 'react'
+import React from 'react'
+// import { connect } from 'react-redux'
 
-function App() {
+import Home from './components/Home'
+
+// import { showAllData } from './modules/actions/AllData__Action'
+
+// const App = ({showAllData, list}) => {
+const App = () => {
+
+  // useEffect(() => {
+  //   showAllData(["haris"])
+  // },[])
+
+  // console.log(list.data)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <Home />
+    </>
+  )
 }
 
-export default App;
+// const mapStateToProps = ( state ) => ({
+//   list: state.AllData
+// })
+
+// const mapDispatchToProps = dispatch => ({
+//   showDataAll: (value) => {
+//     dispatch(showAllData(value))
+//   }
+// })
+
+// const mapDispatchToProps = {
+//   showAllData
+// }
+
+// export default connect(mapStateToProps, mapDispatchToProps)(App)
+export default App
